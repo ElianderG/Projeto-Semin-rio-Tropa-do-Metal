@@ -60,6 +60,7 @@ if(isset($_SESSION["ID"]) && isset($_SESSION["user_name"])) {
                                     echo "<td>$value</td>";
                                 }                                
                             }
+                            echo "<td><a href='alterarcadastro.php?id=$fetch[0]' onclick='return confirm(\"Tem certeza que deseja alterar este registro?\")'>alterar</a></td>";
                             echo "<td><a href='deletarcadastro.php?id=$fetch[0]' onclick='return confirm(\"Tem certeza que deseja excluir este registro?\")'>deletar</a></td>";
                             echo "</tr>";
                         }
